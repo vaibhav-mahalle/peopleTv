@@ -6,4 +6,4 @@ function PlayList() {
   )
 }
 
-export default PlayList
+export {PlayList}

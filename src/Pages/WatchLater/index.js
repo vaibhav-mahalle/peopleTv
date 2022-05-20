@@ -6,4 +6,4 @@ function WatchLater() {
   )
 }
 
-export default WatchLater
+export  {WatchLater}

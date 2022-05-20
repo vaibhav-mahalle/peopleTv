@@ -6,4 +6,4 @@ function Explore() {
   )
 }
 
-export default Explore
+export {Explore}

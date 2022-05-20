@@ -6,4 +6,4 @@ function VideoPage() {
   )
 }
 
-export default VideoPage
+export  {VideoPage}
