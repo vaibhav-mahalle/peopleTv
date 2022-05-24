@@ -1,0 +1,12 @@
+:root{
+    --off-white: hsl(0, 0%, 98%);
+    --black-color: hsl(0, 0%, 7%);
+}
+body{
+    color: var(--off-white);
+    background-color: var(--black-color);
+    
+}
+
+
+
