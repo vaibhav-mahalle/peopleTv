@@ -1,6 +1,7 @@
 import "./App.css";
 import logo from "./logo.png";
-import {RouterPath} from "./routes/RouterPath"
+import {RouterPath} from "./routes/RouterPath";
+
 
 function App() {
   return (
