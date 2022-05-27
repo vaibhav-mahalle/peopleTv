@@ -1,5 +1,6 @@
 import React from "react";
 import "../Auth/Auth.css";
+import { Link } from "react-router-dom";
 
 function Login() {
   return (
@@ -34,7 +35,7 @@ function Login() {
         </div>
         <p>Login with guest credentials?</p>
         <button className="btn btn-primary">Sign-In</button>
-        <button className="btn btn-outline-secondary">New User? Sign-Up</button>
+        <button className="btn btn-outline-secondary"><Link to="/signup">New User? Sign-Up</Link></button>
       </main>
     </div>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import "../Auth/Auth.css";
+import { Link } from "react-router-dom";
 
 function Signup() {
   return (
@@ -70,7 +71,7 @@ function Signup() {
         </form>
   
         <button className="btn btn-outline-secondary">
-          Already a User? Login
+          <Link to="/Login">Already a User? Login</Link>
         </button>
       </div>
     </div>

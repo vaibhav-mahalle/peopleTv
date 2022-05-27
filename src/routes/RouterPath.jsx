@@ -13,6 +13,7 @@ import {
   Login,
   Signup,
 } from "../Pages";
+import { RequiresAuth } from "../components";
 
 export const RouterPath = () => {
   return (
@@ -22,6 +23,40 @@ export const RouterPath = () => {
       <Route path="/signup" element={<Signup />} />
       <Route path="/explore" element={<Explore />} />
       <Route path="/mockman" element={<MockAPI />} />
+      <Route path="/video" element={<VideoPage/>} />
+
+      <Route
+        path="/liked"
+        element={
+          <RequiresAuth>
+            <Liked />
+          </RequiresAuth>
+        }
+      />
+      <Route
+        path="/history"
+        element={
+          <RequiresAuth>
+            <History />
+          </RequiresAuth>
+        }
+      />
+      <Route
+        path="/playlist"
+        element={
+          <RequiresAuth>
+            <Playlist />
+          </RequiresAuth>
+        }
+      />
+      <Route
+        path="/watchlater"
+        element={
+          <RequiresAuth>
+            <WatchLater />
+          </RequiresAuth>
+        }
+      />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
