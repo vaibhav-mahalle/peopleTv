@@ -1,13 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Auth/Auth.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { handleSingup } from "../../context/Auth/util";
+import { useAuth } from "../../context/Auth/context";
 
 function Signup() {
+  const initialDetails = {
+    firstName: "",
+    lastName: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+  };
+
+  const navigate = useNavigate();
+  const { authDispatch } = useAuth();
+
+  const [userDetails, setUserDetails] = useState(initialDetails);
+
+  const handleChange = (e) => {
+    const propertyName = e.target.name;
+    const propertyValue = e.target.value;
+    setUserDetails({ ...userDetails, [propertyName]: propertyValue });
+  };
+  const signupHandler = (e) => {
+    e.preventDefault();
+    handleSingup(userDetails, authDispatch, navigate);
+  };
   return (
     <div className="signupPage">
       <div className="signupContainer">
         <h1 className="page-heading">Signup</h1>
-  
+
         <form className="signupForm flex-column">
           <div className="input-wrapper m-b-1">
             <label htmlFor="input">First Name</label>
@@ -17,10 +41,11 @@ function Signup() {
               autoComplete="on"
               required
               className="input-box font-xs"
+              onChange={(e) => handleChange(e)}
               placeholder="Enter first name"
             />
           </div>
-    
+
           <div className="input-wrapper m-b-1">
             <label htmlFor="input">Last Name</label>
             <input
@@ -29,10 +54,11 @@ function Signup() {
               autoComplete="on"
               required
               className="input-box font-xs"
+              onChange={(e) => handleChange(e)}
               placeholder="Enter last name"
             />
           </div>
-    
+
           <div className="input-wrapper m-b-1">
             <label htmlFor="input">Email</label>
             <input
@@ -41,10 +67,11 @@ function Signup() {
               autoComplete="on"
               required
               className="input-box font-xs"
+              onChange={(e) => handleChange(e)}
               placeholder="Enter your email"
             />
           </div>
-    
+
           <div className="input-wrapper m-b-1">
             <label htmlFor="input">Enter Password</label>
             <input
@@ -52,10 +79,11 @@ function Signup() {
               name="password"
               required
               className="input-box font-xs"
+              onChange={(e) => handleChange(e)}
               placeholder="Enter password"
             />
           </div>
-    
+
           <div className="input-wrapper m-b-1">
             <label htmlFor="input">Confirm Password</label>
             <input
@@ -63,13 +91,16 @@ function Signup() {
               name="conirmPassword"
               required
               className="input-box font-xs"
+              onChange={(e) => handleChange(e)}
               placeholder="Confirm password"
             />
           </div>
-    
-          <button className="btn btn-primary">Sign Up</button>
+
+          <button className="btn btn-primary" onClick={signupHandler}>
+            Sign Up
+          </button>
         </form>
-  
+
         <button className="btn btn-outline-secondary">
           <Link to="/Login">Already a User? Login</Link>
         </button>

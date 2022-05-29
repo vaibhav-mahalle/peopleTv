@@ -7,7 +7,7 @@ import {
   History,
   Home,
   Liked,
-  Playlist,
+  PlayList,
   WatchLater,
   VideoPage,
   Login,
@@ -45,7 +45,7 @@ export const RouterPath = () => {
         path="/playlist"
         element={
           <RequiresAuth>
-            <Playlist />
+            <PlayList />
           </RequiresAuth>
         }
       />
