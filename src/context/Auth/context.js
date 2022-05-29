@@ -3,7 +3,7 @@ import authReducer from "./reducer";
 
 
 const AuthContext = createContext(null);
-const initialValue = { isLoggedIn: false };
+const initialValue = { user: {}, isLoggedIn: localStorage.getItem("UserToken") };
 const AuthProvider = ({ children }) => {
   const [authState, authDispatch] = useReducer(authReducer, initialValue);
 
