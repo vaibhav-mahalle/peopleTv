@@ -1,0 +1,14 @@
+
+:root{
+    --off-white: hsl(0, 0%, 98%);
+    --black-color: #1a1d23 ;
+    --vl-primary: #1a90ff;
+}
+body{
+    color: var(--off-white);
+    background-color: var(--black-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
