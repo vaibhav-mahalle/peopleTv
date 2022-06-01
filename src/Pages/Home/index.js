@@ -1,9 +1,15 @@
-import React from 'react';
+import React from "react";
+import { HomeBanner } from "../../components";
 
 function Home() {
   return (
-    <div>Home</div>
-  )
+    <>
+    <div className="home-container">
+    <HomeBanner />
+    </div>
+      
+    </>
+  );
 }
 
-export {Home}
+export { Home };

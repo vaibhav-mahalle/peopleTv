@@ -1,0 +1,17 @@
+.nav-container{
+    padding: 2rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    box-shadow: 2px 2px 5px var(--vl-primary);
+    margin-top: 1px;
+}
+
+.nav-container .btn{
+    border: 2px solid var(--vl-primary);
+    background-color: hsla(220, 4%, 15%, 0.5);
+    box-shadow: 1px 3px 8px var(--vl-primary);
+    color: var(--vl-primary);
+    padding: 0.3rem 0.6rem;
+}
