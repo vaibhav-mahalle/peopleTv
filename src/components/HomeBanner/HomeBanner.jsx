@@ -1,6 +1,6 @@
 import { Fade } from "react-slideshow-image";
 import React from "react";
-import "./HomeBanner";
+import "./HomeBanner.css";
 import "react-slideshow-image/dist/styles.css";
 import HomeImg1 from "../../assets/HomeImg1.jpg";
 import HomeImg2 from "../../assets/HomeImg2.jpg";
@@ -10,8 +10,8 @@ import HomeImg5 from "../../assets/HomeImg5.jpg";
 
 function HomeBanner() {
   const properties = {
-    duration: 1500,
-    transitionDuration: 1000,
+    duration: 2000,
+    transitionDuration: 1500,
     easing: 'ease',
   }
 
