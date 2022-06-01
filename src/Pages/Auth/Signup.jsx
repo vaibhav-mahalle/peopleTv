@@ -32,7 +32,7 @@ function Signup() {
       <div className="signupContainer">
         <h1 className="page-heading">Signup</h1>
 
-        <form className="signupForm flex-column">
+        <form className="signupForm flex-column" onSubmit={(e)=>signupHandler(e)}>
           <div className="input-wrapper m-b-1">
             <label htmlFor="input">First Name</label>
             <input
@@ -96,7 +96,7 @@ function Signup() {
             />
           </div>
 
-          <button className="btn btn-primary" onClick={signupHandler}>
+          <button type="submit" className="btn btn-primary" >
             Sign Up
           </button>
         </form>

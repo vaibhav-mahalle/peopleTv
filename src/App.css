@@ -1,7 +1,7 @@
 
 :root{
     --off-white: hsl(0, 0%, 98%);
-    --black-color: #1a1d23 ;
+    --black-color: hsl(220, 15%, 12%) ;
     --vl-primary: #1a90ff;
 }
 body{
@@ -10,5 +10,13 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+.app-container{
+    margin-top: 1rem;
+    display: flex;
+}
+
+.main-page-container{
+    margin-left: 10rem;
+}
 
 

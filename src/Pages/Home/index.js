@@ -4,7 +4,10 @@ import { HomeBanner } from "../../components";
 function Home() {
   return (
     <>
-      <HomeBanner />
+    <div className="home-container">
+    <HomeBanner />
+    </div>
+      
     </>
   );
 }
