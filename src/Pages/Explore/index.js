@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { VideoItem } from '../../components/VideoItem/VideoItem';
+
 
 function Explore() {
   return (
-    <div>Explore</div>
+    <div><VideoItem/></div>
   )
 }
 
