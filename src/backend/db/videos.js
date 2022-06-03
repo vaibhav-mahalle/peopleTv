@@ -2,44 +2,17 @@ import { v4 as uuidv4 } from "uuid";
 export const videos = [
   {
     _id: uuidv4(),
-    title: "Norm Macdonald Makes Hilarious jokes on Conan | Conan on TBS",
-    videoId: "L7K-kaelQEs",
+    title: "Delhi, Mumbai & Rich People | Stand-up Comedy by Abhishek Upmanyu",
+    videoId: "mPCDQ34S8Rs",
     description:
-      "He might seem a little old-fashioned to you, but what do you expect from a underrated genius like Norm?",
-    creator: "Team Coco",
+      "Jokes about moving to Mumbai from Delhi, Rich People, and Helping the Poor. Hope you enjoy it.",
+    creator: "Abhishek Upmanyu",
     thumbnail:
-      "https://ik.imagekit.io/j6wafbf7rcj/PeopleTv/vl-pics/norm-battleaxe_d83UBqWlA.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1654168101600",
-    category: "Norm",
+      "https://ik.imagekit.io/j6wafbf7rcj/PeopleTv/vl-pics/abhishek_upmanyu_4_1bkHuf9Gzv.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1654168096959",
+    category: "Upmanyu",
     isLiked: false,
     watchLater: false,
-  },
-  {
-    _id: uuidv4(),
-    title: "Norm Macdonald Hates Oscar Pistorius | CONAN on TBS",
-    videoId: "dTWDNIgM2pA",
-    description:
-      "Norm is no fan of the South African sprinter, look how he maneuvers everyone and makes everyone laugh.",
-    creator: "Team Coco",
-    thumbnail:
-      "https://ik.imagekit.io/j6wafbf7rcj/PeopleTv/vl-pics/norm_ik2A6XnglT.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1654168102041",
-    category: "Norm",
-    isLiked: false,
-    watchLater: false,
-  },
-  {
-    _id: uuidv4(),
-    title:
-      "Norm Macdonald & Courtney Thorne-Smith | Late Night with Conan O’Brien",
-    videoId: "bKmadR4Ye54",
-    description:
-      "Norms comeback to Conans challenge of do something with that you freak was delivered in about 4 seconds- That is the genius of the man.",
-    creator: "Team Coco",
-    thumbnail:
-      "https://ik.imagekit.io/j6wafbf7rcj/PeopleTv/vl-pics/norm-courtney-smith_ULNExlz3MJ.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1654168101974",
-    category: "Norm",
-    isLiked: false,
-    watchLater: false,
-  },
+  },  
   {
     _id: uuidv4(),
     title: "Norm Macdonald - Kitchener Leslie joke",
@@ -94,6 +67,20 @@ export const videos = [
   },
   {
     _id: uuidv4(),
+    title:
+      "Instagram Jokes Compilation(Colorblindness, Cycle, Students) | Abhishek Upmanyu",
+    videoId: "zHD6kxU45BY",
+    description:
+      "Ab is time pe shows nahi kar sakte to nayi videos nahi aa sakti isliye purana jo bacha kucha samaan tha usko ek sath upload kar raha hoon",
+    creator: "Abhishek Upmanyu",
+    thumbnail:
+      "https://ik.imagekit.io/j6wafbf7rcj/PeopleTv/vl-pics/abhishek_upmanyu_6_L6Yn7JF4r.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1654168097372",
+    category: "Upmanyu",
+    isLiked: false,
+    watchLater: false,
+  },
+  {
+    _id: uuidv4(),
     title: "Ricky Gervais....67th Annual Golden Globes",
     videoId: "vKKwKupqzLg",
     description:
@@ -102,6 +89,20 @@ export const videos = [
     thumbnail:
       "https://ik.imagekit.io/j6wafbf7rcj/PeopleTv/vl-pics/ricky-gervais-golden_0nZV29dYT.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1654168103893",
     category: "Ricky",
+    isLiked: false,
+    watchLater: false,
+  },
+ 
+  {
+    _id: uuidv4(),
+    title: "It's My Birthday | Stand up comedy by Sumit Anand",
+    videoId: "6CdhE3hh2CQ",
+    description:
+      "New video is destroyed by none other than me, over and over again.",
+    creator: "Sumit Anand",
+    thumbnail:
+      "https://ik.imagekit.io/j6wafbf7rcj/PeopleTv/vl-pics/Sumit-Anand_s_XLclfqA.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1654168104818",
+    category: "Sumit",
     isLiked: false,
     watchLater: false,
   },
@@ -120,32 +121,6 @@ export const videos = [
   },
   {
     _id: uuidv4(),
-    title: "Ricky Gervais On Teaching Morals To Children",
-    videoId: "IfP8nQ6i5Bo",
-    description:
-      "Taken from his 2nd special POLITICS, the recent host of the 2020 Golden Globes and creator of The Office, Extras and AfterLife Ricky Gervais discusses sweatshops in third world countries, the fable of the two mice, nursery rhymes and everyone's favourite idiot Karl Pilkington",
-    creator: "Universal Comedy",
-    thumbnail:
-      "https://ik.imagekit.io/j6wafbf7rcj/PeopleTv/vl-pics/ricky_gervais3_akgKjH3sk.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1654168102942",
-    category: "Ricky",
-    isLiked: false,
-    watchLater: false,
-  },
-  {
-    _id: uuidv4(),
-    title: "It's My Birthday | Stand up comedy by Sumit Anand",
-    videoId: "6CdhE3hh2CQ",
-    description:
-      "New video is destroyed by none other than me, over and over again.",
-    creator: "Sumit Anand",
-    thumbnail:
-      "https://ik.imagekit.io/j6wafbf7rcj/PeopleTv/vl-pics/Sumit-Anand_s_XLclfqA.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1654168104818",
-    category: "Sumit",
-    isLiked: false,
-    watchLater: false,
-  },
-  {
-    _id: uuidv4(),
     title: "My Job, My Home & The Maid | Stand-Up Comedy by Sumit Anand",
     videoId: "whwQqMMyRPU",
     description:
@@ -159,17 +134,58 @@ export const videos = [
   },
   {
     _id: uuidv4(),
-    title: "Delhi, Mumbai & Rich People | Stand-up Comedy by Abhishek Upmanyu",
-    videoId: "mPCDQ34S8Rs",
+    title: "Norm Macdonald Makes Hilarious jokes on Conan | Conan on TBS",
+    videoId: "L7K-kaelQEs",
     description:
-      "Jokes about moving to Mumbai from Delhi, Rich People, and Helping the Poor. Hope you enjoy it.",
-    creator: "Abhishek Upmanyu",
+      "He might seem a little old-fashioned to you, but what do you expect from a underrated genius like Norm?",
+    creator: "Team Coco",
     thumbnail:
-      "https://ik.imagekit.io/j6wafbf7rcj/PeopleTv/vl-pics/abhishek_upmanyu_4_1bkHuf9Gzv.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1654168096959",
-    category: "Upmanyu",
+      "https://ik.imagekit.io/j6wafbf7rcj/PeopleTv/vl-pics/norm-battleaxe_d83UBqWlA.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1654168101600",
+    category: "Norm",
     isLiked: false,
     watchLater: false,
   },
+  {
+    _id: uuidv4(),
+    title: "Ricky Gervais On Teaching Morals To Children",
+    videoId: "IfP8nQ6i5Bo",
+    description:
+      "Taken from his 2nd special POLITICS, the recent host of the 2020 Golden Globes and creator of The Office, Extras and AfterLife Ricky Gervais discusses sweatshops in third world countries, the fable of the two mice, nursery rhymes and everyone's favourite idiot Karl Pilkington",
+    creator: "Universal Comedy",
+    thumbnail:
+      "https://ik.imagekit.io/j6wafbf7rcj/PeopleTv/vl-pics/ricky_gervais3_akgKjH3sk.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1654168102942",
+    category: "Ricky",
+    isLiked: false,
+    watchLater: false,
+  },
+  {
+    _id: uuidv4(),
+    title: "Norm Macdonald Hates Oscar Pistorius | CONAN on TBS",
+    videoId: "dTWDNIgM2pA",
+    description:
+      "Norm is no fan of the South African sprinter, look how he maneuvers everyone and makes everyone laugh.",
+    creator: "Team Coco",
+    thumbnail:
+      "https://ik.imagekit.io/j6wafbf7rcj/PeopleTv/vl-pics/norm_ik2A6XnglT.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1654168102041",
+    category: "Norm",
+    isLiked: false,
+    watchLater: false,
+  },
+  {
+    _id: uuidv4(),
+    title:
+      "Norm Macdonald & Courtney Thorne-Smith | Late Night with Conan O’Brien",
+    videoId: "bKmadR4Ye54",
+    description:
+      "Norms comeback to Conans challenge of do something with that you freak was delivered in about 4 seconds- That is the genius of the man.",
+    creator: "Team Coco",
+    thumbnail:
+      "https://ik.imagekit.io/j6wafbf7rcj/PeopleTv/vl-pics/norm-courtney-smith_ULNExlz3MJ.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1654168101974",
+    category: "Norm",
+    isLiked: false,
+    watchLater: false,
+  },
+  
   {
     _id: uuidv4(),
     title:
@@ -197,18 +213,5 @@ export const videos = [
     isLiked: false,
     watchLater: false,
   },
-  {
-    _id: uuidv4(),
-    title:
-      "Instagram Jokes Compilation(Colorblindness, Cycle, Students) | Abhishek Upmanyu",
-    videoId: "zHD6kxU45BY",
-    description:
-      "Ab is time pe shows nahi kar sakte to nayi videos nahi aa sakti isliye purana jo bacha kucha samaan tha usko ek sath upload kar raha hoon",
-    creator: "Abhishek Upmanyu",
-    thumbnail:
-      "https://ik.imagekit.io/j6wafbf7rcj/PeopleTv/vl-pics/abhishek_upmanyu_6_L6Yn7JF4r.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1654168097372",
-    category: "Upmanyu",
-    isLiked: false,
-    watchLater: false,
-  },
+  
 ];
