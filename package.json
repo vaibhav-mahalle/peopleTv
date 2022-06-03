@@ -23,6 +23,7 @@
     "react-scripts": "4.0.3",
     "react-slideshow-image": "^3.7.5",
     "react-toastify": "^9.0.1",
+    "react-youtube": "^9.0.2",
     "uuid": "^8.3.2",
     "web-vitals": "^1.0.1"
   },
