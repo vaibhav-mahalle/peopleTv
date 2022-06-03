@@ -3,6 +3,8 @@
     --off-white: hsl(0, 0%, 98%);
     --black-color: hsl(220, 15%, 12%) ;
     --vl-primary: #1a90ff;
+    --vl-primary-light: #6394c2;
+    --bgc-light: hsl(240, 4%, 14%);
 }
 body{
     color: var(--off-white);
@@ -16,7 +18,7 @@ body{
 }
 
 .main-page-container{
-    margin-left: 10rem;
+    margin-left: 7rem;
 }
 
 

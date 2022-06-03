@@ -1,0 +1,45 @@
+.video-container{
+    width: 16rem;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 7px;
+    padding: 1px;
+    background-color: var(--bgc-light);
+}
+
+.align-content{
+    padding: 0.6rem 0.5rem;
+}
+
+.thumbnail-container{
+    border-radius: 5px;
+}
+
+.thumbnail-container img{
+    border-radius: 5px;
+    aspect-ratio: 16/9;
+    width: 100%;
+}
+
+.ellipse{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 1.3rem;
+}
+
+.children-centered{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.txt-gray{
+    color: gray;
+}
+
+.txt-label{
+    line-height: 1rem;
+    font-size: 0.8rem;
+}
