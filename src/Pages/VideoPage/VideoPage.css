@@ -33,5 +33,5 @@
 }
 
 .txt-gray-color{
-    color: #808080;
+    color: var(--dark-gray);
 }
