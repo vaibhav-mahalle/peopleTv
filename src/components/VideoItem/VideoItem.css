@@ -6,6 +6,7 @@
     border-radius: 7px;
     padding: 1px;
     background-color: var(--bgc-light);
+    position: relative;
 }
 
 .align-content{
@@ -43,3 +44,20 @@
     line-height: 1rem;
     font-size: 0.8rem;
 }
+
+.modal-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    width: 6rem;
+    border: 1px;
+    z-index: 6;
+    padding: 0.3rem 0.3rem;
+    border-radius: 3px;
+    background-color: var(--vl-primary-light);
+    position: absolute;
+    bottom: 0rem;
+    left: 8rem;
+}
+

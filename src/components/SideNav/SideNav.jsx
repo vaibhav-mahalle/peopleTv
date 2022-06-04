@@ -12,7 +12,7 @@ import { AiOutlineHome } from "react-icons/ai";
 
 function SideNav() {
   const getActiveStyle = ({isActive}) => {
-     isActive;
+     return {isActive};
   };
   return (
     <div className="main-container">
