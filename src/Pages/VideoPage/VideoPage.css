@@ -6,15 +6,6 @@
     width: 40rem;
 }
 
-.txt-lg{
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.txt-sm{
-    font-size: 14px;
-}
-
 .video-icons{
     display: flex;
     gap: 1rem;
@@ -32,6 +23,6 @@
     
 }
 
-.txt-gray-color{
+/* .txt-gray-color{
     color: var(--dark-gray);
-}
+} */

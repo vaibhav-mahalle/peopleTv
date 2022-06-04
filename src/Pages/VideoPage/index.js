@@ -4,7 +4,7 @@ import YouTube from "react-youtube";
 import { useVideo } from "../../context/Video/context";
 import "./VideoPage.css";
 import { BiLike } from "react-icons/bi";
-import { MdPlaylistAdd, MdHistory } from "react-icons/md";
+import { MdPlaylistAdd, MdOutlineWatchLater } from "react-icons/md";
 
 const VideoPage = () => {
   const { videoId } = useParams();
@@ -29,7 +29,7 @@ const VideoPage = () => {
               <p className="font-xs">LIKE</p> 
             </div>
             <div className="align-icons">
-              <MdHistory size={27} />
+              <MdOutlineWatchLater size={27} />
               <p className="font-xs">WATCH LATER</p>
             </div>
             <div className="align-icons">

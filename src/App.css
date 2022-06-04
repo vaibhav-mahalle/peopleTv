@@ -22,4 +22,27 @@ body{
     margin-left: 7rem;
 }
 
+.align-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.txt-gray-color{
+    color: var(--dark-gray);
+}
+
+.txt-lg{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.txt-sm{
+    font-size: 14px;
+    line-height: 1rem;
+}
+
+.txt-xlg{
+    font-size: 22px;
+    font-weight: 600;
+}
