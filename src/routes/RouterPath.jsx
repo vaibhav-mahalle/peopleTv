@@ -23,7 +23,7 @@ export const RouterPath = () => {
       <Route path="/signup" element={<Signup />} />
       <Route path="/explore" element={<Explore />} />
       <Route path="/mockman" element={<MockAPI />} />
-      <Route path="/video" element={<VideoPage/>} />
+      <Route path="/videopage/:videoId" element={<VideoPage/>} />
 
       <Route
         path="/liked"
