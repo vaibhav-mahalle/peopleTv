@@ -23,7 +23,7 @@ const VideoPage = () => {
         <YouTube class="video-iframe" videoId={videoId} opts={options} />
         <div className="videopage-footer">
           <p className="txt-lg">{title}</p>
-          <div className="video-icons">
+          <div className="video-icons txt-gray-color">
             <div className="align-icons">
               <BiLike size={27} />
               <p className="font-xs">LIKE</p> 
@@ -41,7 +41,7 @@ const VideoPage = () => {
             Channel Name: <span className="font-light">{creator}</span>
           </p>
           <p className="font-regular">Description:</p>
-          <p className="font-light txt-sm">{description}</p>
+          <p className="font-light txt-sm txt-gray-color">{description}</p>
         </div>
       </div>
     </>

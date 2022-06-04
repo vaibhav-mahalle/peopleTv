@@ -4,7 +4,6 @@
     line-height: 1.5rem;
     position: relative;
     width: 40rem;
-    border: 4px solid red;
 }
 
 .txt-lg{
@@ -29,5 +28,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
+}
+
+.txt-gray-color{
     color: #808080;
 }
