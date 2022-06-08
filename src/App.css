@@ -27,7 +27,11 @@ body{
     align-items: center;
     justify-content: center;
 }
-
+.common-videolisting-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem 1rem;
+}
 .txt-gray-color{
     color: var(--dark-gray);
 }
