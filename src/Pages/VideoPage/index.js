@@ -1,35 +1,56 @@
+import "./VideoPage.css";
 import React from "react";
 import { useParams } from "react-router-dom";
 import YouTube from "react-youtube";
-import { useVideo } from "../../context/Video/context";
-import "./VideoPage.css";
 import { BiLike } from "react-icons/bi";
-import { MdPlaylistAdd, MdHistory } from "react-icons/md";
+import { MdPlaylistAdd, MdOutlineWatchLater } from "react-icons/md";
+import { LikeVideo, unLikeVideo, isVideoLiked} from "../../context/Video/liked";
+import { useVideo, useAuth } from "../../context";
+import { AiFillLike } from "react-icons/ai";
 
 const VideoPage = () => {
   const { videoId } = useParams();
-  const allVideos = useVideo();
-  const requiredVideo =
-    allVideos?.find(({ videoId: idVideo }) => idVideo === videoId) || {};
-  const { title, creator, description } = requiredVideo;
+  const { authState } = useAuth();
+  const { isLoggedIn } = authState;
+  const { videoState, videoDispatch, video, setVideos } = useVideo();
+  const {videos, liked, watchLater, playlists, history } = videoState;
+
   const options = {
     playerVars: {
       autoplay: 0,
     },
   };
+
+  const findRequiredVideo = (videosData) => videosData.find(item => item.videoId === videoId);
+
+  const videoData = findRequiredVideo(videos);
+  const isLiked = isVideoLiked(videoData?.videoId, liked);
   return (
     <>
       <div>
-        <YouTube class="video-iframe" videoId={videoId} opts={options} />
+        <YouTube class="video-iframe" videoId={videoId} opts={options} host= {'https://www.youtube.com'}/>
         <div className="videopage-footer">
-          <p className="txt-lg">{title}</p>
+          <p className="txt-lg">{videoData?.title}</p>
           <div className="video-icons txt-gray-color">
             <div className="align-icons">
-              <BiLike size={27} />
-              <p className="font-xs">LIKE</p> 
+              {isLiked ? (
+                <>
+                  <AiFillLike
+                    color={"var(--vl-primary)"}
+                    size={27}
+                    onClick={() => unLikeVideo(isLoggedIn, videoDispatch, videoData)}
+                  />
+                  <p className="font-xs">DISLIKE</p>
+                </>
+              ): (
+                <>
+                  <BiLike size={27} onClick={() => LikeVideo(isLoggedIn, videoDispatch, videoData)} />
+                  <p className="font-xs">LIKE</p>
+                </>
+              ) }
             </div>
             <div className="align-icons">
-              <MdHistory size={27} />
+              <MdOutlineWatchLater size={27} />
               <p className="font-xs">WATCH LATER</p>
             </div>
             <div className="align-icons">
@@ -38,10 +59,10 @@ const VideoPage = () => {
             </div>
           </div>
           <p className="font-regular">
-            Channel Name: <span className="font-light">{creator}</span>
+            Channel Name: <span className="font-light">{videoData?.creator}</span>
           </p>
           <p className="font-regular">Description:</p>
-          <p className="font-light txt-sm txt-gray-color">{description}</p>
+          <p className="font-light txt-sm txt-gray-color">{videoData?.description}</p>
         </div>
       </div>
     </>

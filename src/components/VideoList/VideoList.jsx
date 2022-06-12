@@ -4,10 +4,10 @@ import { VideoItem } from '../VideoItem/VideoItem';
 import "./VideoList.css";
 
 const VideoList =()=> {
-  const Allvideos = useVideo();
+  const {videos} = useVideo();
 
   return (
-    <div className='videolisting-container'>{Allvideos.map( item => {
+    <div className='videolisting-container'>{videos.map( item => {
       return(<VideoItem item={item}/>)
     })}</div>
   )
