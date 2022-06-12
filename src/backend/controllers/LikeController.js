@@ -13,6 +13,7 @@ import { requiresAuth } from "../utils/authUtils";
  * */
 export const getLikedVideosHandler = function (schema, request) {
   const user = requiresAuth.call(this, request);
+  
   try {
     if (!user) {
       return new Response(
@@ -43,6 +44,7 @@ export const getLikedVideosHandler = function (schema, request) {
 
 export const addItemToLikedVideos = function (schema, request) {
   const user = requiresAuth.call(this, request);
+  console.log({user});
   if (user) {
     const { video } = JSON.parse(request.requestBody);
     if (user.likes.some((item) => item.id === video.id)) {
@@ -75,7 +77,7 @@ export const removeItemFromLikedVideos = function (schema, request) {
   const user = requiresAuth.call(this, request);
   if (user) {
     const videoId = request.params.videoId;
-    const filteredLikes = user.likes.filter((item) => item._id !== videoId);
+    const filteredLikes = user.likes.filter((item) => item.videoId !== videoId);
     this.db.users.update({ likes: filteredLikes });
     return new Response(200, {}, { likes: filteredLikes });
   }

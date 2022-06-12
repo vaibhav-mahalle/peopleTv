@@ -1,3 +1,5 @@
+export { VideoCon } from "./VideoCon/VideoCon";
+
 export { Modal } from "./Modal/Modal";
 export { VideoItem } from "./VideoItem/VideoItem";
 export { VideoList } from "./VideoList/VideoList";

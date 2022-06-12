@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { getAllLikedVideos, unLikeVideo } from "../../context/Video/liked";
 import { useVideo } from "../../context/Video/context";
 import { useAuth } from "../../context/Auth/context";
-import { VideoItem } from "../../components";
+import { VideoCon } from "../../components";
 
 export const Liked = () => {
   const { videoState, videoDispatch } = useVideo();
@@ -25,7 +25,7 @@ export const Liked = () => {
         </div>
       ) : (
         <div className="common-videolisting-container">{liked.map( item => {
-          return(<VideoItem item={item}/>)
+          return(<VideoCon item={item}/>)
         })}</div>
       )}
     </>
