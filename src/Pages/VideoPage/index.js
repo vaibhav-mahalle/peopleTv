@@ -5,8 +5,7 @@ import YouTube from "react-youtube";
 import { BiLike } from "react-icons/bi";
 import { MdPlaylistAdd, MdOutlineWatchLater } from "react-icons/md";
 import { LikeVideo, unLikeVideo, isVideoLiked} from "../../context/Video/liked";
-import { useVideo } from "../../context/Video/context";
-import { useAuth } from "../../context/Auth/context";
+import { useVideo, useAuth } from "../../context";
 import { AiFillLike } from "react-icons/ai";
 
 const VideoPage = () => {
@@ -26,8 +25,6 @@ const VideoPage = () => {
 
   const videoData = findRequiredVideo(videos);
   const isLiked = isVideoLiked(videoData?.videoId, liked);
-
-  console.log(videoData)
   return (
     <>
       <div>

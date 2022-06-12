@@ -8,6 +8,7 @@ import {
 import { videoReducer } from "./reducer";
 import axios from "axios";
 import { FilterByCategory, Compose } from "./utils";
+import { ToastMsg } from "../../components";
 
 const VideoContext = createContext(null);
 
@@ -29,6 +30,7 @@ const VideoProvider = ({ children }) => {
         videoDispatch({ type: "SET_VIDEOS", payload: res.data.videos });
       }
     } catch (error) {
+      ToastMsg("Error in setting videos", "error");
       console.error("Error in setting videos", error);
     }
   };
