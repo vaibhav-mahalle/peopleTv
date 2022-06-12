@@ -21,7 +21,7 @@ export const WatchLater = () => {
         </div>
       ) : (
         <div className="common-videolisting-container">{watchLater.map( item => {
-          return(<VideoCon item={item}/>)
+          return(<VideoCon item={item} functionType="deleteWatchLater"/>)
         })}</div>
       )}
     </>

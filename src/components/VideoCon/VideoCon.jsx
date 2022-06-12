@@ -5,11 +5,11 @@ import { useVideo } from "../../context/Video/context";
 import { MdMoreVert, MdPlaylistAdd, MdOutlineWatchLater } from "react-icons/md";
 import { Modal } from "../Modal/Modal";
 import { BiLike } from "react-icons/bi";
-import { LikeVideo, unLikeVideo } from "../../context/Video/liked";
+import { LikeVideo, unLikeVideo,deleteFromHistory,removeFromWatchLater } from "../../context";
 import { useAuth } from "../../context/Auth/context";
 import { FiTrash } from "react-icons/fi";
 
-const VideoCon = ({ item }) => {
+const VideoCon = ({ item , functionType}) => {
   const { authState } = useAuth();
   const { isLoggedIn } = authState;
   const { videoState, videoDispatch } = useVideo();
@@ -19,7 +19,17 @@ const VideoCon = ({ item }) => {
     videosData.find((videoitem) => videoitem.videoId === videoId);
 
   const videoData = findRequiredVideo(videos);
- 
+  const deleteVideoCard = () => {
+    if(functionType === 'deleteHistory'){
+      return deleteFromHistory(isLoggedIn, videoDispatch, videoData);
+    }
+    if(functionType === 'deleteLiked'){
+      return unLikeVideo(isLoggedIn, videoDispatch, videoData);
+    }
+    if(functionType === 'deleteWatchLater'){
+      return removeFromWatchLater(isLoggedIn, videoDispatch, videoData);
+    }
+  }
 
   return (
     <div className="videocon-container">
@@ -36,7 +46,7 @@ const VideoCon = ({ item }) => {
           <div>
             <FiTrash
               size={22}
-              onClick={() => unLikeVideo(isLoggedIn, videoDispatch, videoData)}
+              onClick={() => deleteVideoCard()}
             />
           </div>
         </div>

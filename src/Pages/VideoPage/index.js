@@ -43,8 +43,6 @@ const VideoPage = () => {
   const videoData = findRequiredVideo(videos);
   const isLiked = isVideoLiked(videoData?.videoId, liked);
   const isInWatchLater = isVideoInwatchLater(videoData?.videoId, watchLater);
-  const isInHistory = isVideoInHistory(videoData?.videoId, history);
- 
   return (
     <>
       <div>
