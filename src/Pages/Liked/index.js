@@ -25,7 +25,7 @@ export const Liked = () => {
         </div>
       ) : (
         <div className="common-videolisting-container">{liked.map( item => {
-          return(<VideoCon item={item}/>)
+          return(<VideoCon item={item} functionType="deleteLiked"/>)
         })}</div>
       )}
     </>

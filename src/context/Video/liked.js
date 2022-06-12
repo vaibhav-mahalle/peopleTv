@@ -14,7 +14,6 @@ export const getAllLikedVideos = async () => {
 };
 
 export const LikeVideo = async (isLoggedIn, videoDispatch, video) => {
-    console.log({video});
     if(isLoggedIn){
         try{
             const res = await axios.post('/api/user/likes',{video},{
@@ -44,7 +43,7 @@ export const unLikeVideo = async (isLoggedIn, videoDispatch, video) => {
     try{
         const res = await axios.delete(`/api/user/likes/${video.videoId}`,{headers:{authorization: isLoggedIn}});
         videoDispatch({type:"UNLIKE_VIDEO",payload: res.data.likes});
-        ToastMsg("Removed from liked videos","error");
+        ToastMsg("Removed from liked videos","success");
 
     }
     catch(error){
@@ -53,4 +52,4 @@ export const unLikeVideo = async (isLoggedIn, videoDispatch, video) => {
 
 };
 
-export const isVideoLiked = (videoId, liked) => liked.some(item => item.videoId === videoId);
+export const isVideoLiked = (id, liked) => liked.some(item => item.videoId === id);
