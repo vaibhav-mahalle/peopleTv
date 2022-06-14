@@ -1,0 +1,10 @@
+.playlist-title-container{
+    width: 16rem;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 7px;
+    padding: 1px;
+    background-color: var(--vl-primary-lighter);
+    
+}

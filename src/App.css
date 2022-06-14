@@ -4,6 +4,7 @@
     --black-color: hsl(220, 15%, 12%) ;
     --vl-primary: #1a90ff;
     --vl-primary-light: #6394c2;
+    --vl-primary-lighter: #8ca9c4;
     --bgc-light: hsl(240, 4%, 14%);
     --dark-gray: #808080;
 }
@@ -49,4 +50,8 @@ body{
 .txt-xlg{
     font-size: 22px;
     font-weight: 600;
+}
+
+.cursorPointer{
+    cursor: pointer;
 }

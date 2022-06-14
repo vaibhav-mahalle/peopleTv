@@ -1,7 +1,7 @@
 .hero-container{
-    height: 65vh;
     margin: 0rem auto;
-    width: 60vw;
+    width: 65vw;
+    height: 70vh;
 }
 
 .resp-img{
