@@ -29,6 +29,12 @@ const VideoCon = ({ item , functionType}) => {
     if(functionType === 'deleteWatchLater'){
       return removeFromWatchLater(isLoggedIn, videoDispatch, videoData);
     }
+    if(functionType === 'deletePlaylistVideos'){
+      return removeVideoFromPlaylist(isLoggedIn,
+        playlistId,
+        videoData,
+        videoDispatch)
+    }
   }
 
   return (
