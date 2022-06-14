@@ -1,0 +1,15 @@
+.category-box-container{
+    width: 12rem;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 1px;
+    padding: 1px;
+    position: relative;
+}
+
+.align-content-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem 1rem;
+}

@@ -4,14 +4,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between ;
-    box-shadow: 2px 2px 5px var(--vl-primary);
+    box-shadow: 0 3px 3px 4px rgb(0 0 0/50%);
     margin-top: 1px;
 }
 
 .nav-container .btn{
-    border: 2px solid var(--vl-primary);
-    background-color: hsla(220, 4%, 15%, 0.5);
-    box-shadow: 1px 3px 8px var(--vl-primary);
-    color: var(--vl-primary);
+    background-color: var(--vl-primary-light);
+    color: var(--off-white);
     padding: 0.3rem 0.6rem;
+}
+
+.brand-image-container{
+    width: 4rem;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+    cursor: pointer;
 }
