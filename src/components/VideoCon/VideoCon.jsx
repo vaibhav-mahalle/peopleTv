@@ -5,11 +5,11 @@ import { useVideo } from "../../context/Video/context";
 import { MdMoreVert, MdPlaylistAdd, MdOutlineWatchLater } from "react-icons/md";
 import { Modal } from "../Modal/Modal";
 import { BiLike } from "react-icons/bi";
-import { LikeVideo, unLikeVideo,deleteFromHistory,removeFromWatchLater } from "../../context";
+import { LikeVideo, unLikeVideo,deleteFromHistory,removeFromWatchLater, removeVideoFromPlaylist } from "../../context";
 import { useAuth } from "../../context/Auth/context";
 import { FiTrash } from "react-icons/fi";
 
-const VideoCon = ({ item , functionType}) => {
+const VideoCon = ({ item , functionType, playlistId}) => {
   const { authState } = useAuth();
   const { isLoggedIn } = authState;
   const { videoState, videoDispatch } = useVideo();
@@ -30,6 +30,7 @@ const VideoCon = ({ item , functionType}) => {
       return removeFromWatchLater(isLoggedIn, videoDispatch, videoData);
     }
     if(functionType === 'deletePlaylistVideos'){
+      console.log("item",{item});
       return removeVideoFromPlaylist(isLoggedIn,
         playlistId,
         videoData,

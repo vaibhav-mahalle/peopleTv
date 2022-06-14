@@ -1,5 +1,6 @@
+export { Filterpills } from "./Filterpills";
+export { CategoryBox } from "./CategoryBox/CategoryBox";
 export { VideoCon } from "./VideoCon/VideoCon";
-
 export { Modal } from "./Modal/Modal";
 export { VideoItem } from "./VideoItem/VideoItem";
 export { VideoList } from "./VideoList/VideoList";
@@ -8,6 +9,4 @@ export { ToastMsg } from "./ToastMsg/ToastMsg";
 export { HomeBanner } from "./HomeBanner/HomeBanner";
 export { SideNav } from "./SideNav/SideNav";
 export { TopNav } from "./TopNav/TopNav";
-
-
 

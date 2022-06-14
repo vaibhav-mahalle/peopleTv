@@ -11,6 +11,8 @@ export const videoReducer = (state, { type, payload }) => {
     case "REMOVE_ALL_FROM_WATCHLATER":
     case "GET_WATCHLATER":
       return { ...state, watchLater: payload };
+    case "FILTER_BY_CATEGORY":
+      return { ...state, category: payload };
     case "ADD_TO_HISTORY":
     case "REMOVE_FROM_HISTORY":
     case "GET_HISTORY":
