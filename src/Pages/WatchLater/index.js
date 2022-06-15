@@ -20,9 +20,12 @@ export const WatchLater = () => {
           </div>
         </div>
       ) : (
-        <div className="common-videolisting-container">{watchLater.map( item => {
-          return(<VideoCon item={item} functionType="deleteWatchLater"/>)
-        })}</div>
+        <>
+          <h2 className="common-page-heading p-1"> WatchLater --- {watchLater.length}</h2>
+          <div className="common-videolisting-container">{watchLater.map( item => {
+            return(<VideoCon item={item} functionType="deleteWatchLater"/>)
+          })}</div>
+        </>
       )}
     </>
   )

@@ -14,14 +14,16 @@ function TopNav() {
     <header className="nav-container">
       <div className="flex-row">
         <AiOutlineMenu size={35} />
-        <div className="brand-image-container">
-          <img
-            src={
-              "https://ik.imagekit.io/j6wafbf7rcj/PeopleTv/vl-pics/Screenshot__122__YsGhLDZPo.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655207508576"
-            }
-            alt="Brand-logo"
-          />
-        </div>
+        <Link to={"/"}>
+          <div className="brand-image-container">
+            <img
+              src={
+                "https://ik.imagekit.io/j6wafbf7rcj/PeopleTv/vl-pics/Screenshot__122__YsGhLDZPo.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655207508576"
+              }
+              alt="Brand-logo"
+            />
+          </div>
+        </Link>
       </div>
       {isLoggedIn ? (
         <button

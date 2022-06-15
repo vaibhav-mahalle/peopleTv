@@ -19,15 +19,18 @@ export const PlayList = () => {
           </div>
         </div>
       ) : (
-        <div className="common-videolisting-container">
-          {playlists.map(({ _id, title}) => (
-            <Link to={`/playlists/${_id}`} key={_id}>
-              <div className="playlist-title-container txt-xlg align-content">
-                {title}
-              </div>
-            </Link>
-          ))}
-        </div>
+        <>
+          <h2 className="common-page-heading p-1"> Playlists --- {playlists.length}</h2>
+          <div className="common-videolisting-container">
+            {playlists.map(({ _id, title}) => (
+              <Link to={`/playlists/${_id}`} key={_id}>
+                <div className="playlist-title-container txt-xlg align-content">
+                  {title}
+                </div>
+              </Link>
+            ))}
+          </div>
+        </>
       )}
     </>
   );

@@ -19,11 +19,14 @@ export const History = () => {
           </div>
         </div>
       ) : (
-        <div className="common-videolisting-container">
-          {history.map((item) => {
-            return <VideoCon item={item} functionType="deleteHistory"/>;
-          })}
-        </div>
+        <>
+          <h2 className="common-page-heading p-1"> History --- {history.length}</h2>
+          <div className="common-videolisting-container">
+            {history.map((item) => {
+              return <VideoCon item={item} functionType="deleteHistory" />;
+            })}
+          </div>
+        </>
       )}
     </>
   );

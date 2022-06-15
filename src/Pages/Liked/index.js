@@ -24,9 +24,12 @@ export const Liked = () => {
           </div>
         </div>
       ) : (
-        <div className="common-videolisting-container">{liked.map( item => {
-          return(<VideoCon item={item} functionType="deleteLiked"/>)
-        })}</div>
+        <>
+          <h2 className="common-page-heading p-1"> Liked --- {liked.length}</h2>
+          <div className="common-videolisting-container">{liked.map( item => {
+            return(<VideoCon item={item} functionType="deleteLiked"/>)
+          })}</div>
+        </>
       )}
     </>
   );
