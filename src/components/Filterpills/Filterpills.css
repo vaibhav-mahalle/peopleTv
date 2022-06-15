@@ -1,0 +1,19 @@
+.align-filters-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+}
+
+.filter-pill{
+    border: 2px solid var(--vl-primary-light);
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.filled-filter-pill{
+    background-color: var(--vl-primary-light);
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}

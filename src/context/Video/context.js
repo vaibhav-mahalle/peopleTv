@@ -13,7 +13,8 @@ import { ToastMsg } from "../../components";
 const VideoContext = createContext(null);
 
 const VideoProvider = ({ children }) => {
-  const [video, setVideos] = useState([]);
+  const [showModal, setShowModal] = useState(false);
+  const [video, setVideo] = useState({});
   const [videoState, videoDispatch] = useReducer(videoReducer, {
     videos: [],
     liked: [],
@@ -46,7 +47,8 @@ const VideoProvider = ({ children }) => {
 
   return (
     <VideoContext.Provider
-      value={{ videoState, videoDispatch, videos: getFilteredVideos, video, setVideos }}
+      value={{ videoState, videoDispatch, videos: getFilteredVideos,  showModal,
+        setShowModal,video, setVideo, }}
     >
       {children}
     </VideoContext.Provider>

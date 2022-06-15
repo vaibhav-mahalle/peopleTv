@@ -23,6 +23,8 @@
     
 }
 
-/* .txt-gray-color{
-    color: var(--dark-gray);
-} */
+.videopage-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}

@@ -14,15 +14,18 @@ export const WatchLater = () => {
         <div className="align-content">
           <div className="msg-container txt-xlg">
             No videos here
-            <Link to="/explore" className="txt-gray-color p-l-1">
+            <Link to="/explore" className="txt-white-color p-l-1">
               watch now
             </Link>
           </div>
         </div>
       ) : (
-        <div className="common-videolisting-container">{watchLater.map( item => {
-          return(<VideoCon item={item} functionType="deleteWatchLater"/>)
-        })}</div>
+        <>
+          <h2 className="common-page-heading p-1"> WatchLater --- {watchLater.length}</h2>
+          <div className="common-videolisting-container">{watchLater.map( item => {
+            return(<VideoCon item={item} functionType="deleteWatchLater"/>)
+          })}</div>
+        </>
       )}
     </>
   )

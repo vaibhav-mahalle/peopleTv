@@ -16,3 +16,11 @@ export {
 
 export { AuthProvider, useAuth } from "./Auth/context";
 export { useVideo, VideoProvider } from "./Video/context";
+
+export {
+  addNewPlaylist,
+  addVideoToPlaylist,
+  getAllPlaylist,
+  isVideoPresentInPlaylist,
+  removeVideoFromPlaylist,
+} from "./Video/playlist";

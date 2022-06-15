@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import "./VideoItem.css";
 import { Link } from "react-router-dom";
-import { MdMoreVert, MdPlaylistAdd, MdOutlineWatchLater, MdWatchLater } from "react-icons/md";
+import {
+  MdMoreVert,
+  MdPlaylistAdd,
+  MdOutlineWatchLater,
+  MdWatchLater,
+  MdOutlinePlaylistAddCheck,
+} from "react-icons/md";
 import { AiFillLike } from "react-icons/ai";
 import { Modal } from "../Modal/Modal";
 import { BiLike } from "react-icons/bi";
@@ -85,7 +91,11 @@ const VideoItem = ({ item }) => {
                 }
               />
             )}
-            <MdPlaylistAdd size={22} />
+            {false ? (
+              <MdOutlinePlaylistAddCheck size={24} />
+            ) : (
+              <MdPlaylistAdd size={24} />
+            )}
           </div>
         )}
       </div>

@@ -2,8 +2,9 @@
 :root{
     --off-white: hsl(0, 0%, 98%);
     --black-color: hsl(220, 15%, 12%) ;
-    --vl-primary: #1a90ff;
-    --vl-primary-light: #6394c2;
+    --vl-primary: #1363DF;
+    --vl-primary-light: #47B5FF;
+    --vl-primary-lighter: #DFF6FF;
     --bgc-light: hsl(240, 4%, 14%);
     --dark-gray: #808080;
 }
@@ -21,7 +22,16 @@ body{
 .main-page-container{
     margin-left: 7rem;
 }
-
+.msg-container{
+    width: 30rem;
+    height: 15rem;
+    background-color: var(--vl-primary-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color:  var(--black-color);
+}
 .align-content{
     display: flex;
     align-items: center;
@@ -36,6 +46,9 @@ body{
     color: var(--dark-gray);
 }
 
+.txt-white-color{
+    color: var(--off-white);
+}
 .txt-lg{
     font-size: 18px;
     font-weight: 500;
@@ -49,4 +62,16 @@ body{
 .txt-xlg{
     font-size: 22px;
     font-weight: 600;
+}
+
+.txt-xxlg{
+    font-size: 40px;
+    font-weight: 600;
+}
+.cursorPointer{
+    cursor: pointer;
+}
+
+.common-page-heading-container{
+    
 }

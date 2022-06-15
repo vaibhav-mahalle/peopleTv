@@ -12,6 +12,7 @@ import {
   VideoPage,
   Login,
   Signup,
+  SinglePlaylist,
 } from "../Pages";
 import { RequiresAuth } from "../components";
 
@@ -23,7 +24,7 @@ export const RouterPath = () => {
       <Route path="/signup" element={<Signup />} />
       <Route path="/explore" element={<Explore />} />
       <Route path="/mockman" element={<MockAPI />} />
-      <Route path="/videopage/:videoId" element={<VideoPage/>} />
+      <Route path="/videopage/:videoId" element={<VideoPage />} />
 
       <Route
         path="/liked"
@@ -46,6 +47,15 @@ export const RouterPath = () => {
         element={
           <RequiresAuth>
             <PlayList />
+          </RequiresAuth>
+        }
+      />
+
+      <Route
+        path="/playlists/:playlistId"
+        element={
+          <RequiresAuth>
+            <SinglePlaylist />
           </RequiresAuth>
         }
       />

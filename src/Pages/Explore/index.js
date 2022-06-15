@@ -1,13 +1,13 @@
-import React from 'react';
-import { VideoList } from '../../components';
-import { VideoItem } from '../../components/VideoItem/VideoItem';
+import React from "react";
+import { Filterpills, VideoList } from "../../components";
 
-
-
-function Explore() {
+export const Explore = () => {
   return (
-    <div><VideoList/></div>
-  )
-}
-
-export {Explore}
+    <div>
+      <div className="m-b-1">
+        <Filterpills />
+      </div>
+      <VideoList />
+    </div>
+  );
+};
