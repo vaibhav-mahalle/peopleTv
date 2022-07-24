@@ -11,7 +11,6 @@ export const CategoryBox = () => {
     const {videoDispatch} = useVideo();
 
     const categories = responseData.categories || [];
-    console.log(categories)
   return (
     <div className="align-content-grid">
         {categories.map(({_id, categoryName, thumbnail}) => (<div key={_id} className="category-box-container" onClick={()=> videoDispatch({type:"FILTER_BY_CATEGORY",payload:categoryName})}>
